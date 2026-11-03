@@ -1,0 +1,201 @@
+﻿id_funcionario;nome_ficticio;cargo;setor;salario_mensal;data_admissao;tempo_empresa_anos;idade;genero;escolaridade;turno;tipo_contrato;carga_horaria_semanal;faltas_12m;horas_extras_media_mensal;avaliacao_desempenho_1a5;horas_treinamento_ano;status
+1;Carlos Carvalho Oliveira;Auxiliar de Producao;Producao;1815;19/05/2024;2.4;42;Masculino;Ensino medio completo;Noite;Temporario;40;1;6.8;4;20;Ativo
+2;Mateus Santos Pinto;Supervisor de Producao;Producao;3438;12/01/2024;2.7;37;Masculino;Ensino medio completo;Manha;CLT;44;2;7.6;3;42;Ativo
+3;Everton Freitas Silva;Salgadeiro;Producao;2420;19/02/2017;9.6;34;Masculino;Ensino medio completo;Integral;CLT;44;4;8.0;5;41;Ativo
+4;Felipe Almeida Rodrigues;Nutricionista;Qualidade;3666;14/06/2022;4.3;48;Masculino;Superior completo;Tarde;CLT;30;0;6.9;3;69;Ativo
+5;Aline Carvalho Lima;Atendente de Loja;Vendas;1616;24/07/2024;2.2;23;Feminino;Ensino fundamental completo;Manha;Temporario;44;5;7.7;2;41;Afastado
+6;Eduardo Oliveira Freitas;Atendente de Loja;Vendas;1773;27/10/2021;4.9;36;Masculino;Ensino medio completo;Integral;CLT;40;0;9.6;3;;Desligado
+7;Elisa Ferreira Souza;Auxiliar de Producao;Producao;1670;10/01/2026;0.7;26;Feminino;Ensino medio completo;Integral;CLT;44;2;0.7;1;24;Afastado
+8;Gustavo Ribeiro Cardoso;Auxiliar de Producao;Producao;1832;06/10/2018;8.0;23;Masculino;Ensino medio incompleto;Manha;CLT;44;1;19.5;4;30;Desligado
+9;Helena Pinto Souza;Auxiliar de Producao;Producao;1725;17/09/2015;11.0;31;Feminino;Ensino fundamental completo;Integral;CLT;44;1;4.9;5;26;Ativo
+10;Fernanda Ramos Souza;Auxiliar de Producao;Producao;1770;10/08/2025;1.1;18;Feminino;Superior incompleto;Noite;CLT;40;3;23.9;4;4;Ativo
+11;Vanessa Gomes Silva;Atendente de Loja;Vendas;25000;25/04/2022;4.4;36;Feminino;Ensino medio incompleto;Manha;Temporario;40;1;2.6;2;21;Ativo
+12;Vanessa Pinto Ribeiro;Auxiliar de Limpeza;Apoio;1744;02/02/2019;7.7;22;Feminino;Superior incompleto;Manha;CLT;44;1;11.0;3;11;Ativo
+13;Paulo Pinto Ribeiro;Atendente de Loja;Vendas;1806;04/05/2019;7.4;27;Masculino;Ensino medio completo;Integral;CLT;40;5;3.2;3;15;Ativo
+14;Diego Rodrigues Fernandes;Salgadeiro;Producao;2400;04/08/2020;6.2;20;Masculino;Ensino medio completo;Manha;CLT;44;1;2.3;3;36;Ativo
+15;Paulo Carvalho Costa;Entregador;Logistica;2228;27/10/2019;6.9;27;Masculino;Ensino medio incompleto;Integral;CLT;30;2;6.5;4;6;Ativo
+16;Daniel Gomes Rocha;Auxiliar de Limpeza;Apoio;1704;31/12/2017;8.7;43;Masculino;Ensino medio completo;Manha;CLT;40;3;8.6;4;;Desligado
+17;Lucas Carvalho Ferreira;Auxiliar de Producao;Producao;1752;13/04/2025;1.5;20;Masculino;Ensino medio completo;Integral;CLT;40;0;1.6;4;4;Ativo
+18;Aline Araujo Dias;Atendente de Loja;Vendas;1642;18/06/2021;5.3;32;Feminino;Ensino medio incompleto;Tarde;CLT;40;2;0.7;5;33;Ferias
+19;Renata Costa Melo;Auxiliar de Producao;Producao;1870;03/03/2026;0.6;22;Feminino;Ensino medio completo;Noite;CLT;40;6;5.1;4;21;Ativo
+20;Vitória Freitas Santos;Auxiliar de Producao;Producao;1805;07/08/2017;9.1;38;Feminino;Ensino medio completo;Integral;CLT;40;1;24.3;3;41;Ativo
+21;Mateus Ramos Souza;Entregador;Logistica;2152;22/11/2023;2.9;23;Masculino;Ensino medio completo;Integral;CLT;40;5;20.5;4;6;Ativo
+22;Cristian Santos Martins;Auxiliar de Producao;Producao;938;30/12/2025;0.7;33;Masculino;Ensino medio completo;Integral;Estagio;20;4;7.4;3;12;Ativo
+23;Clara Dias Cardoso;Auxiliar de Producao;Producao;1800;02/11/2015;10.9;28;Feminino;Ensino medio completo;Tarde;CLT;44;2;7.4;4;26;Ferias
+24;Thais Ferreira Freitas;Atendente de Loja;Vendas;1838;13/04/2025;1.5;29;Feminino;Ensino fundamental completo;Manha;CLT;40;13;7.1;4;27;Ferias
+25;Patricia Ribeiro Freitas;Supervisor de Producao;Producao;3920;24/06/2022;4.3;38;Feminino;Superior completo;Noite;CLT;44;2;8.4;4;26;Ativo
+26;Daniela Almeida Rodrigues;Auxiliar de Limpeza;Apoio;1691;01/04/2020;6.5;39;Feminino;Ensino medio incompleto;Manha;CLT;44;3;120;4;14;Ativo
+27;Sabrina Souza Oliveira;Auxiliar de Producao;Producao;1641;23/11/2015;10.9;18;Feminino;Ensino medio completo;Manha;CLT;44;6;11.7;4;7;Ativo
+28;Patricia Rodrigues Lima;Atendente de Loja;Vendas;1185;15/09/2023;3.0;31;Feminino;Ensino fundamental completo;Tarde;Aprendiz;20;3;0.6;3;6;Ativo
+29;Diego Pinto Carvalho;Auxiliar de Producao;Producao;1787;05/08/2024;2.1;28;Masculino;Superior incompleto;Manha;CLT;40;15;7.4;4;29;Ativo
+30;Rodrigo Ramos Rodrigues;Nutricionista;Qualidade;4288;02/09/2023;3.1;37;Masculino;Pos-graduacao;Integral;CLT;44;10;1.9;;19;Ativo
+31;Carlos Rocha Rocha;Auxiliar de Producao;Producao;1748;14/07/2017;9.2;38;Masculino;;Tarde;CLT;40;1;8.7;5;6;Ativo
+32;Clara Freitas Santos;Atendente de Loja;Vendas;1678;22/06/2026;0.3;21;Feminino;Ensino medio completo;Integral;CLT;40;2;8.2;4;30;Ativo
+33;Juliana Cardoso Ramos;Auxiliar de Producao;Producao;1910;03/09/2021;5.1;27;Feminino;Ensino medio completo;Integral;CLT;40;5;1.7;4;35;Ativo
+34;Sabrina Dias Carvalho;Auxiliar de Producao;Producao;1852;10/05/2024;2.4;41;Feminino;Ensino medio incompleto;Manha;CLT;44;3;24.0;3;14;Ativo
+35;Elisa Cardoso Freitas;Entregador;Logistica;2070;22/08/2024;2.1;33;Feminino;Ensino fundamental completo;Manha;CLT;40;4;6.0;5;20;Ativo
+36;Priscila Costa Dias;Auxiliar de Producao;Producao;1708;09/01/2026;0.7;23;Feminino;Ensino medio completo;Integral;CLT;44;6;4.1;3;32;Ativo
+37;Diego Gomes Pinto;Auxiliar de Producao;Producao;1693;22/11/2017;8.9;44;Masculino;Ensino medio completo;Manha;CLT;40;7;7.5;3;19;Ativo
+38;Bruno Santos Gomes;Nutricionista;Qualidade;4219;28/09/2024;2.0;31;Masculino;Pos-graduacao;Manha;CLT;30;4;5.9;2;15;Ativo
+39;Rodrigo Rodrigues Pinto;Auxiliar de Producao;Producao;1680;18/05/2021;5.4;18;Masculino;;Tarde;CLT;40;7;23.7;3;11;Ativo
+40;Ana Pinto Araujo;Auxiliar Administrativo;Administrativo;1841;10/02/2026;0.6;29;Feminino;Superior completo;Manha;CLT;40;0;20.5;2;11;Ativo
+41;Rafaela Pinto Costa;Auxiliar de Limpeza;Apoio;1663;01/03/2024;2.6;35;Feminino;;Manha;CLT;30;45;13.0;3;9;Ativo
+42;Thiago Rodrigues Ribeiro;Auxiliar de Producao;Producao;1887;05/11/2023;2.9;21;Masculino;Ensino medio incompleto;Tarde;CLT;40;1;18.1;5;0;Ativo
+43;Paulo Nascimento Martins;Auxiliar de Producao;Producao;1853;17/04/2022;4.5;26;Masculino;Ensino fundamental completo;Noite;CLT;44;0;15.9;3;28;Ativo
+44;Vanessa Costa Araujo;Entregador;Logistica;1905;04/04/2016;10.5;35;Feminino;Ensino medio completo;Tarde;CLT;40;5;0;3;29;Ativo
+45;Mariana Souza Pinto;Auxiliar de Limpeza;Apoio;1684;14/08/2024;2.1;27;Feminino;Superior incompleto;Tarde;CLT;40;5;8.7;5;31;Afastado
+46;Gabriela Lima Almeida;Auxiliar de Producao;Producao;946;01/11/2023;2.9;31;Feminino;Ensino fundamental completo;Manha;Estagio;30;1;21.8;3;30;Ativo
+47;Felipe Ribeiro Barbosa;Atendente de Loja;Vendas;989;09/11/2024;1.9;37;Masculino;Ensino medio completo;Manha;Aprendiz;30;6;11.1;3;23;Ativo
+48;Natalia Barbosa Pinto;Salgadeiro;Producao;2485;13/05/2022;4.4;19;Feminino;;Tarde;CLT;30;7;7.9;4;40;Ativo
+49;Clara Freitas Ribeiro;Salgadeiro;Producao;2585;28/10/2020;5.9;27;Feminino;Ensino fundamental completo;Manha;CLT;44;0;3.3;4;12;Ativo
+50;Otavio Costa Freitas;Atendente de Loja;Vendas;1720;14/09/2025;1.0;36;Masculino;Ensino medio completo;Manha;CLT;40;2;15.9;4;24;Ativo
+51;Mariana Freitas Martins;Salgadeiro;Producao;1269;17/02/2023;3.6;31;Feminino;Ensino medio completo;Tarde;Estagio;30;4;7.0;2;31;Ativo
+52;Elisa Lima Pinto;Salgadeiro;Producao;2279;15/02/2023;3.6;28;Feminino;Ensino medio completo;Tarde;CLT;44;4;5.7;3;34;Ativo
+53;Rafaela Oliveira Ferreira;Salgadeiro;Producao;2092;27/09/2023;3.0;18;Feminino;Ensino fundamental completo;Noite;CLT;40;0;10.7;4;34;Ativo
+54;Clara Costa Rocha;Entregador;Logistica;1986;30/07/2019;7.2;20;Feminino;Ensino medio completo;Manha;CLT;44;4;5.0;;27;Afastado
+55;Juliana Souza Araujo;Auxiliar de Producao;Producao;1834;18/01/2019;7.7;29;Feminino;Ensino medio completo;Noite;CLT;44;8;14.7;3;25;Ativo
+56;Daniela Fernandes Fernandes;Auxiliar de Producao;Producao;1790;17/04/2025;1.5;17;Feminino;Superior incompleto;Manha;CLT;44;7;3.3;3;26;Ativo
+57;Aline Cardoso Pinto;Auxiliar de Limpeza;Apoio;1742;03/11/2023;2.9;31;Feminino;Ensino fundamental completo;Manha;CLT;40;0;14.8;4;33;Ativo
+58;Diego Nascimento Oliveira;Motorista;Logistica;2543;13/07/2025;1.2;19;Masculino;Ensino medio completo;Manha;CLT;40;1;10.5;4;24;Ativo
+59;Gustavo Santos Carvalho;Auxiliar de Producao;Producao;1768;28/12/2024;1.8;21;Masculino;;Tarde;CLT;40;2;23.5;3;23;Ativo
+60;Daniel Costa Gomes;Salgadeiro;Producao;2396;07/04/2021;5.5;39;Masculino;Superior incompleto;Tarde;CLT;40;2;4.2;4;;Desligado
+61;Tatiane Oliveira Nascimento;Salgadeiro;Producao;2431;28/11/2025;0.8;33;Feminino;Ensino medio incompleto;Noite;CLT;44;5;8.6;3;45;Desligado
+62;Pedro Melo Costa;Auxiliar de Producao;Producao;939;25/02/2026;0.6;28;Masculino;Ensino medio incompleto;Noite;Aprendiz;20;2;7.1;4;6;Ativo
+63;Thiago Almeida Martins;Entregador;Logistica;2112;01/09/2023;3.1;32;Masculino;Superior incompleto;Noite;CLT;44;4;0.9;3;;Desligado
+64;Vinicius Souza Rodrigues;Auxiliar Administrativo;Administrativo;2223;20/11/2024;1.9;22;Masculino;Superior incompleto;Tarde;CLT;44;1;10.3;3;24;Ativo
+65;Daniela Ramos Nascimento;Atendente de Loja;Vendas;1744;14/04/2025;1.5;34;Feminino;Ensino fundamental completo;Integral;Temporario;40;5;3.2;2;28;Ativo
+66;Beatriz Carvalho Barbosa;Salgadeiro;Producao;2596;01/05/2022;4.4;31;Feminino;Ensino medio completo;Noite;CLT;30;11;8.6;4;26;Ativo
+67;Vinicius Freitas Fernandes;Atendente de Loja;Vendas;1774;08/03/2017;9.6;29;Masculino;Ensino medio completo;Tarde;CLT;44;2;6.2;4;26;Ativo
+68;Marcos Nascimento Pereira;Auxiliar de Producao;Producao;1753;10/02/2016;10.6;40;Masculino;Ensino medio completo;Manha;CLT;44;2;7.2;2;2;Ativo
+69;Carlos Rocha Nascimento;Auxiliar de Producao;Producao;1813;12/05/2026;0.4;23;Masculino;Ensino medio completo;Manha;CLT;30;4;6.6;3;15;Ativo
+70;Camila Ribeiro Barbosa;Auxiliar Administrativo;Administrativo;1996;27/11/2024;1.8;33;Feminino;Superior completo;Manha;CLT;44;2;0;5;5;Ativo
+71;Beatriz Oliveira Pinto;Entregador;Logistica;2071;22/03/2025;1.5;30;Feminino;Ensino medio completo;Manha;CLT;40;0;3.5;2;27;Ativo
+72;Otavio Martins Cardoso;Auxiliar Administrativo;Administrativo;2000;22/01/2025;1.7;23;Masculino;Superior incompleto;Integral;CLT;44;3;6.3;3;8;Ativo
+73;Eduardo Costa Oliveira;Auxiliar de Producao;Producao;1775;06/11/2022;3.9;36;Masculino;Ensino medio completo;Tarde;CLT;44;0;13.9;4;29;Ativo
+74;Tatiane Carvalho Souza;Salgadeiro;Producao;2584;26/01/2022;4.7;29;Feminino;Ensino fundamental completo;Noite;CLT;40;5;8.0;5;5;Ativo
+75;Diego Costa Gomes;Auxiliar de Limpeza;Apoio;1649;27/03/2021;5.5;31;Masculino;Ensino medio completo;Tarde;CLT;44;14;12.4;4;19;Ativo
+76;Vinicius Rodrigues Oliveira;Auxiliar de Producao;Producao;1157;18/08/2025;1.1;18;Masculino;Ensino medio completo;Tarde;Estagio;30;4;12.5;3;22;Ativo
+77;Priscila Rocha Lima;Salgadeiro;Producao;987;12/08/2020;6.1;23;Feminino;Ensino medio completo;Tarde;Estagio;20;0;5.0;5;11;Ativo
+78;Renata Almeida Gomes;Salgadeiro;Producao;2137;22/03/2023;3.5;24;Feminino;Ensino medio completo;Manha;CLT;44;2;8.8;3;37;Ativo
+79;Gustavo Gomes Lima;Auxiliar de Producao;Producao;1830;03/07/2025;1.2;25;Masculino;Superior incompleto;Manha;CLT;40;6;14.4;3;29;Ativo
+80;Everton Pinto Dias;Gerente;Administrativo;7492;11/04/2022;4.5;37;Masculino;Pos-graduacao;Tarde;CLT;44;4;6.3;2;35;Ativo
+81;Elisa Souza Araujo;Salgadeiro;Producao;2087;05/03/2020;6.6;33;Feminino;Ensino medio completo;Tarde;CLT;44;3;5.1;4;10;Ativo
+82;Natalia Melo Ribeiro;Atendente de Loja;Vendas;1876;05/02/2023;3.6;25;Feminino;Ensino medio completo;Tarde;CLT;40;1;0;3;25;Ativo
+83;Joao Nascimento Rocha;Salgadeiro;Producao;2386;25/08/2022;4.1;27;Masculino;Ensino medio completo;Tarde;CLT;40;2;7.7;3;17;Ativo
+84;Tatiane Rocha Melo;Atendente de Loja;Vendas;1735;20/10/2022;3.9;30;Feminino;Ensino medio completo;Manha;CLT;44;3;7.6;3;32;Ativo
+85;Leandro Ferreira Melo;Entregador;Logistica;1828;03/07/2018;8.2;39;Masculino;Ensino medio incompleto;Manha;CLT;40;0;9.1;;14;Ativo
+86;Natalia Martins Rocha;Auxiliar de Producao;Producao;1681;31/01/2026;0.7;36;Feminino;Superior incompleto;Noite;CLT;40;2;0;3;9;Ativo
+87;Vinicius Carvalho Nascimento;Auxiliar de Producao;Producao;1823;31/01/2021;5.7;28;Masculino;Ensino medio completo;Manha;CLT;44;4;5.3;4;13;Ativo
+88;Clara Oliveira Nascimento;Entregador;Logistica;2013;17/02/2024;2.6;35;Feminino;Ensino fundamental completo;Integral;CLT;44;4;0.3;3;22;Ativo
+89;Luana Souza Gomes;Atendente de Loja;Vendas;1153;19/11/2025;0.9;18;Feminino;Ensino medio incompleto;Manha;Aprendiz;30;2;5.9;3;0;Ativo
+90;Clara Almeida Pereira;Auxiliar Administrativo;Administrativo;2072;24/01/2026;0.7;35;Feminino;Superior completo;Tarde;CLT;40;2;5.9;4;27;Ativo
+91;Everton Martins Ramos;Auxiliar de Producao;Producao;1725;20/11/2020;5.9;24;Masculino;Ensino medio completo;Manha;CLT;30;14;6.6;3;40;Ativo
+92;Thais Freitas Dias;Salgadeiro;Producao;2104;02/03/2024;2.6;25;Feminino;Superior incompleto;Integral;CLT;44;0;4.1;5;18;Ativo
+93;Rodrigo Souza Pinto;Entregador;Logistica;2161;31/03/2025;1.5;31;Masculino;;Noite;CLT;44;0;22.4;5;24;Ativo
+94;Beatriz Barbosa Martins;Salgadeiro;Producao;2379;23/09/2017;9.0;39;Feminino;Ensino medio completo;Integral;CLT;40;5;7.6;4;45;Ativo
+95;Diego Pinto Pinto;Entregador;Logistica;2202;25/05/2026;0.3;27;Masculino;Ensino medio completo;Manha;CLT;44;2;9.8;4;17;Ativo
+96;Henrique Ribeiro Rocha;Salgadeiro;Producao;2077;11/06/2026;0.3;40;Masculino;Ensino medio completo;Manha;CLT;44;6;0;3;25;Ativo
+97;Tatiane Rodrigues Carvalho;Auxiliar de Producao;Producao;1855;27/10/2021;4.9;33;Feminino;Ensino medio completo;Integral;CLT;40;6;21.1;3;20;Ativo
+98;Everton Pinto Barbosa;Supervisor de Producao;Producao;3932;15/10/2020;6.0;40;Masculino;Superior incompleto;Noite;CLT;44;5;10.6;3;42;Ferias
+99;Patricia Barbosa Freitas;Atendente de Loja;Vendas;1780;11/06/2021;5.3;37;Feminino;Ensino medio completo;Tarde;CLT;44;3;7.2;3;43;Ativo
+100;Gabriela Gomes Rodrigues;Auxiliar de Producao;Producao;1692;04/07/2017;9.2;25;Feminino;Ensino medio completo;Tarde;CLT;40;4;22.1;4;17;Ativo
+101;Joao Martins Fernandes;Auxiliar Administrativo;Administrativo;2329;06/03/2018;8.6;42;Masculino;Superior completo;Tarde;CLT;40;3;0;3;13;Ativo
+102;Igor Araujo Lima;Auxiliar de Producao;Producao;1826;05/10/2024;2.0;18;Masculino;Ensino medio incompleto;Manha;CLT;44;3;11.1;4;21;Ativo
+103;Carlos Fernandes Santos;Auxiliar de Producao;Producao;1813;03/02/2020;6.7;18;Masculino;Ensino medio completo;Integral;CLT;40;3;9.1;5;36;Ativo
+104;Anderson Freitas Barbosa;Supervisor de Producao;Producao;3249;22/07/2015;11.2;47;Masculino;Ensino medio completo;Tarde;CLT;44;5;4.6;4;56;Ativo
+105;Natalia Oliveira Martins;Salgadeiro;Producao;2344;17/04/2020;6.5;22;Feminino;Superior incompleto;Manha;CLT;44;4;5.0;3;45;Ativo
+106;Marcos Lima Souza;Salgadeiro;Producao;2453;31/07/2020;6.2;24;Masculino;Ensino medio completo;Manha;CLT;40;3;2.7;4;30;Ativo
+107;Leandro Araujo Oliveira;Atendente de Loja;Vendas;1857;04/10/2019;7.0;26;Masculino;;Tarde;Temporario;44;2;10.9;3;21;Ativo
+108;Luana Melo Araujo;Atendente de Loja;Vendas;1758;05/03/2023;3.6;28;Feminino;Ensino medio completo;Tarde;CLT;44;2;4.5;3;27;Ativo
+109;Joao Costa Araujo;Gerente;Administrativo;6153;30/09/2023;3.0;38;Masculino;Pos-graduacao;Tarde;CLT;44;1;7.8;3;21;Ativo
+110;Daniel Gomes Araujo;Atendente de Loja;Vendas;1777;04/08/2024;2.2;23;Masculino;Ensino medio incompleto;Manha;CLT;40;4;7.9;4;17;Ativo
+111;Camila Martins Ferreira;Auxiliar Administrativo;Administrativo;2028;23/11/2024;1.8;28;Feminino;Superior incompleto;Tarde;CLT;44;2;3.8;3;24;Ativo
+112;Daniel Ramos Almeida;Atendente de Loja;Vendas;1802;18/07/2022;4.2;33;Masculino;Ensino medio completo;Manha;CLT;44;0;11.5;4;27;Ativo
+113;Renata Ramos Almeida;Auxiliar de Producao;Producao;1066;13/08/2021;5.1;19;Feminino;Ensino medio incompleto;Noite;Estagio;20;0;18.5;4;2;Afastado
+114;Thais Barbosa Freitas;Auxiliar de Producao;Producao;1679;22/03/2024;2.5;26;Feminino;Ensino medio completo;Noite;CLT;44;3;11.9;2;33;Ativo
+115;Patricia Souza Silva;Auxiliar de Limpeza;Apoio;1744;16/04/2024;2.5;29;Feminino;Ensino medio completo;Tarde;CLT;40;2;3.9;4;9;Ativo
+116;Vitória Costa Martins;Atendente de Loja;Vendas;1662;24/08/2024;2.1;20;Feminino;Ensino medio completo;Manha;CLT;44;2;3.9;4;12;Ativo
+117;Fernanda Freitas Pereira;Entregador;Logistica;2005;20/06/2019;7.3;47;Feminino;Ensino medio completo;Tarde;CLT;40;1;12.9;4;16;Ativo
+118;Aline Souza Freitas;Atendente de Loja;Vendas;1719;26/03/2022;4.5;25;Feminino;Ensino medio completo;Manha;CLT;44;5;3.1;1;22;Ativo
+119;Camila Pinto Costa;Atendente de Loja;Vendas;1691;11/03/2022;4.6;36;Feminino;Ensino medio incompleto;Tarde;CLT;44;1;4.1;4;27;Ativo
+120;Renata Melo Santos;Auxiliar de Producao;Producao;1661;04/03/2018;8.6;18;Feminino;Ensino medio completo;Manha;CLT;44;0;8.1;5;23;Ativo
+121;Igor Freitas Rodrigues;Salgadeiro;Producao;2619;11/06/2022;4.3;34;Masculino;Ensino medio incompleto;Tarde;CLT;40;0;6.3;3;23;Ativo
+122;Juliana Santos Cardoso;Salgadeiro;Producao;2498;10/01/2023;3.7;18;Feminino;Ensino fundamental completo;Manha;CLT;40;4;12.2;4;37;Ativo
+123;Vanessa Ferreira Melo;Auxiliar de Producao;Producao;1873;27/08/2017;9.1;29;Feminino;Ensino medio completo;Manha;CLT;44;1;0;;24;Ativo
+124;Thais Gomes Carvalho;Salgadeiro;Producao;969;23/04/2024;2.4;18;Feminino;Ensino medio incompleto;Manha;Aprendiz;20;7;4.4;;27;Ativo
+125;Bruno Rocha Ribeiro;Auxiliar de Limpeza;Apoio;1665;23/03/2020;6.5;25;Masculino;Ensino medio completo;Tarde;Temporario;40;0;4.3;3;47;Ativo
+126;Clara Santos Santos;Atendente de Loja;Vendas;1795;05/06/2025;1.3;41;Feminino;Ensino medio completo;Integral;CLT;40;2;4.0;5;18;Ferias
+127;Priscila Pereira Santos;Salgadeiro;Producao;2081;25/06/2025;1.3;31;Feminino;Ensino medio completo;Manha;CLT;44;0;4.6;5;29;Ativo
+128;Natalia Oliveira Ribeiro;Auxiliar de Producao;Producao;1684;10/04/2024;2.5;41;Feminino;Ensino medio incompleto;Noite;CLT;40;4;20.4;4;32;Ativo
+129;Daniel Pinto Cardoso;Auxiliar de Producao;Producao;1615;21/04/2021;5.4;29;Masculino;Ensino medio incompleto;Tarde;Temporario;44;2;4.6;3;15;Ferias
+130;Fabio Rodrigues Almeida;Salgadeiro;Producao;971;23/11/2017;8.8;34;Masculino;Ensino medio completo;Tarde;Estagio;30;3;11.8;4;22;Ativo
+131;Mariana Freitas Pinto;Salgadeiro;Producao;2192;03/01/2017;9.7;18;Feminino;Ensino medio completo;Integral;CLT;40;2;0;5;37;Ativo
+132;Elisa Ferreira Oliveira;Auxiliar de Producao;Producao;1740;29/05/2026;0.3;28;Feminino;Ensino fundamental completo;Tarde;CLT;30;5;4.7;4;9;Ativo
+133;Renata Melo Melo;Salgadeiro;Producao;2332;02/06/2019;7.3;33;Feminino;Ensino medio completo;Tarde;CLT;44;2;4.7;4;28;Ativo
+134;Ana Gomes Barbosa;Atendente de Loja;Vendas;1649;02/11/2015;10.9;24;Feminino;Ensino fundamental completo;Tarde;CLT;44;0;1.4;5;34;Ativo
+135;Tatiane Silva Santos;Gerente;Administrativo;6653;20/06/2017;9.3;46;Feminino;Superior completo;Tarde;CLT;44;4;5.9;4;25;Ativo
+136;Eduardo Fernandes Pinto;Entregador;Logistica;1964;07/12/2025;0.8;32;Masculino;Ensino medio incompleto;Integral;CLT;44;3;6.5;3;28;Ativo
+137;Cristian Dias Rocha;Auxiliar de Producao;Producao;1914;05/03/2026;0.6;36;Masculino;Ensino fundamental completo;Tarde;CLT;40;7;8.7;3;20;Ativo
+138;Vinicius Carvalho Barbosa;Auxiliar Administrativo;Administrativo;2238;09/09/2018;8.1;27;Masculino;Superior completo;Manha;CLT;44;13;11.9;5;20;Ativo
+139;Elisa Carvalho Rodrigues;Entregador;Logistica;2120;06/10/2017;9.0;55;Feminino;Superior incompleto;Integral;CLT;40;6;22.3;2;22;Ativo
+140;Juliana Cardoso Ferreira;Salgadeiro;Producao;2455;22/07/2024;2.2;24;Feminino;Ensino medio incompleto;Manha;CLT;44;7;7.3;4;19;Ativo
+141;Rodrigo Freitas Ribeiro;Auxiliar de Producao;Producao;1611;09/02/2025;1.6;35;Masculino;Ensino medio incompleto;Noite;CLT;44;5;11.1;2;13;Afastado
+142;Gabriela Nascimento Cardoso;Entregador;Logistica;1843;02/12/2017;8.8;44;Feminino;Ensino medio completo;Manha;CLT;40;3;9.8;2;0;Desligado
+143;Felipe Santos Melo;Auxiliar de Producao;Producao;1611;28/05/2025;1.3;20;Masculino;Ensino medio completo;Manha;CLT;30;0;8.6;3;4;Ativo
+144;Anderson Dias Martins;Auxiliar de Producao;Producao;1664;11/07/2020;6.2;43;Masculino;Ensino medio completo;Tarde;CLT;40;4;13.9;4;30;Ativo
+145;Joao Freitas Ribeiro;Salgadeiro;Producao;2327;08/07/2021;5.2;18;Masculino;Ensino medio incompleto;Manha;Temporario;44;10;10.4;4;31;Ativo
+146;Gabriela Dias Freitas;Salgadeiro;Producao;2550;12/01/2025;1.7;35;Feminino;Ensino medio completo;Integral;CLT;44;2;3.1;1;23;Ativo
+147;Clara Souza Fernandes;Entregador;Logistica;2021;18/09/2017;9.0;18;Feminino;Ensino medio incompleto;Manha;CLT;30;3;8.0;5;18;Ferias
+148;Otavio Carvalho Pinto;Auxiliar de Producao;Producao;1907;14/05/2021;5.4;31;Masculino;Superior incompleto;Tarde;CLT;40;6;14.1;4;34;Ferias
+149;Felipe Gomes Ribeiro;Salgadeiro;Producao;1294;28/08/2020;6.1;48;Masculino;Ensino medio completo;Manha;Estagio;30;3;5.8;5;30;Afastado
+150;Patricia Pereira Barbosa;Auxiliar de Producao;Producao;1796;28/03/2026;0.5;25;Feminino;Ensino medio completo;Noite;CLT;40;4;4.7;4;9;Ativo
+151;Vitória Oliveira Freitas;Atendente de Loja;Vendas;1628;24/05/2022;4.4;22;Feminino;Ensino medio completo;Tarde;CLT;44;5;1.9;2;46;Ativo
+152;Fabio Rodrigues Rodrigues;Atendente de Loja;Vendas;1876;28/09/2025;1.0;37;Masculino;Ensino medio completo;Tarde;CLT;40;2;10.1;;18;Ativo
+153;Sabrina Pinto Ferreira;Auxiliar de Producao;Producao;1866;26/09/2018;8.0;39;Feminino;Ensino medio completo;Tarde;CLT;44;3;11.2;5;21;Ativo
+154;Natalia Fernandes Barbosa;Auxiliar de Producao;Producao;1881;28/04/2021;5.4;25;Feminino;Ensino medio completo;Manha;CLT;40;9;9.2;5;25;Ativo
+155;Henrique Almeida Costa;Salgadeiro;Producao;2372;30/10/2019;6.9;22;Masculino;;Tarde;CLT;44;0;0;3;44;Ativo
+156;Ana Ramos Melo;Salgadeiro;Producao;2051;22/02/2024;2.6;27;Feminino;Ensino medio incompleto;Integral;CLT;40;2;0;4;24;Ferias
+157;Thiago Santos Pereira;Auxiliar de Producao;Producao;1631;05/03/2023;3.6;30;Masculino;Ensino medio completo;Integral;CLT;44;1;11.5;3;1;Ativo
+158;Helena Costa Rodrigues;Salgadeiro;Producao;2451;20/08/2016;10.1;36;Feminino;Ensino medio completo;Manha;CLT;30;5;13.3;3;29;Ativo
+159;Lucas Ramos Fernandes;Supervisor de Producao;Producao;3643;31/03/2025;1.5;43;Masculino;Ensino medio completo;Tarde;CLT;44;4;13.2;4;15;Ativo
+160;Helena Martins Dias;Motorista;Logistica;2513;08/01/2019;7.7;31;Feminino;Ensino medio completo;Manha;CLT;40;0;7.2;3;30;Ativo
+161;Rafael Fernandes Silva;Salgadeiro;Producao;2381;13/02/2021;5.6;37;Masculino;Ensino medio incompleto;Integral;CLT;40;7;8.7;5;42;Ativo
+162;Henrique Cardoso Rodrigues;Auxiliar Administrativo;Administrativo;2332;20/02/2024;2.6;21;Masculino;Superior incompleto;Manha;CLT;40;0;0;4;15;Ativo
+163;Everton Rodrigues Almeida;Auxiliar de Producao;Producao;1860;09/08/2021;5.1;46;Masculino;Ensino fundamental completo;Tarde;CLT;40;0;11.0;5;4;Ativo
+164;Aline Almeida Gomes;Auxiliar de Limpeza;Apoio;1703;15/10/2025;1.0;18;Feminino;Ensino medio completo;Integral;CLT;44;2;0.3;3;9;Ativo
+165;Gustavo Pinto Gomes;Salgadeiro;Producao;2145;23/11/2022;3.8;33;Masculino;Ensino medio completo;Integral;CLT;44;5;0;2;38;Ativo
+166;Fabio Araujo Fernandes;Supervisor de Producao;Producao;4071;01/11/2021;4.9;36;Masculino;Superior completo;Tarde;CLT;44;4;11.4;4;22;Ativo
+167;Isabela Almeida Rocha;Auxiliar de Producao;Producao;1598;16/06/2025;1.3;23;Feminino;Ensino fundamental completo;Manha;CLT;30;0;6.9;4;14;Ativo
+168;Bruno Nascimento Ribeiro;Auxiliar de Producao;Producao;1776;21/10/2018;7.9;26;Masculino;Ensino medio completo;Noite;CLT;40;11;8.0;5;35;Ativo
+169;Sabrina Martins Rocha;Salgadeiro;Producao;2451;23/01/2021;5.7;21;Feminino;Ensino fundamental completo;Tarde;CLT;44;2;9.2;4;53;Ativo
+170;Beatriz Pinto Souza;Entregador;Logistica;1982;27/09/2019;7.0;46;Feminino;;Manha;CLT;40;1;5.4;3;17;Ativo
+171;Eduardo Fernandes Ribeiro;Atendente de Loja;Vendas;1717;08/06/2021;5.3;42;Masculino;Ensino medio completo;Manha;CLT;40;3;4.3;4;11;Ativo
+172;Diego Souza Lima;Auxiliar de Producao;Producao;1749;15/07/2023;3.2;27;Masculino;Ensino medio completo;Integral;CLT;40;7;0;4;12;Ativo
+173;Eduardo Rocha Santos;Salgadeiro;Producao;1035;19/06/2024;2.3;32;Masculino;Ensino fundamental completo;Manha;Aprendiz;30;3;8.0;;26;Ativo
+174;Fernanda Souza Costa;Motorista;Logistica;2276;08/11/2023;2.9;43;Feminino;Ensino medio incompleto;Integral;CLT;44;1;8.6;4;29;Ativo
+175;Thiago Souza Barbosa;Auxiliar de Limpeza;Apoio;1562;03/02/2026;0.7;19;Masculino;Ensino medio incompleto;Tarde;CLT;44;4;9.6;1;10;Ativo
+176;Rafaela Pinto Nascimento;Auxiliar de Producao;Producao;1602;01/12/2023;2.8;18;Feminino;Ensino fundamental completo;Integral;CLT;44;4;15.9;4;10;Ativo
+177;Helena Oliveira Cardoso;Entregador;Logistica;2178;07/02/2023;3.6;24;Feminino;Superior incompleto;Manha;CLT;44;15;0;3;17;Ativo
+178;Vanessa Almeida Nascimento;Gerente;Administrativo;6646;03/09/2017;9.1;44;Feminino;Superior completo;Manha;CLT;44;8;6.5;4;28;Ferias
+179;Vinicius Martins Ramos;Entregador;Logistica;2228;05/04/2021;5.5;18;Masculino;Ensino fundamental completo;Manha;CLT;44;0;21.4;3;7;Ativo
+180;Rafaela Lima Souza;Atendente de Loja;Vendas;1851;07/07/2022;4.2;42;Feminino;Ensino medio completo;Tarde;CLT;40;4;3.8;3;9;Ativo
+181;Paulo Pinto Melo;Auxiliar de Producao;Producao;1733;12/12/2023;2.8;41;Masculino;Superior incompleto;Manha;CLT;40;7;3.0;5;26;Ativo
+182;Mateus Freitas Nascimento;Auxiliar de Producao;Producao;1689;27/08/2025;1.1;39;Masculino;Ensino medio completo;Tarde;CLT;40;1;19.0;5;0;Ativo
+183;Rafaela Ribeiro Freitas;Auxiliar de Producao;Producao;1651;23/05/2024;2.4;28;Feminino;Ensino medio completo;Integral;CLT;30;4;10.5;4;5;Ativo
+184;Daniela Melo Pinto;Auxiliar de Producao;Producao;1868;11/02/2025;1.6;25;Feminino;;Manha;CLT;40;3;22.6;4;14;Ativo
+185;Daniel Rocha Cardoso;Auxiliar de Producao;Producao;1874;11/08/2024;2.1;42;Masculino;Ensino medio completo;Manha;CLT;40;0;0;;14;Ativo
+186;Rafael Ferreira Freitas;Salgadeiro;Producao;2592;25/04/2024;2.4;39;Masculino;Ensino medio completo;Noite;CLT;44;5;5.3;4;38;Ativo
+187;Tatiane Carvalho Pereira;Entregador;Logistica;1803;10/04/2022;4.5;38;Feminino;Superior incompleto;Manha;CLT;44;7;7.9;4;11;Ativo
+188;Mariana Cardoso Carvalho;Auxiliar de Producao;Producao;1765;31/08/2021;5.1;31;Feminino;Ensino medio incompleto;Integral;CLT;40;1;2.7;4;10;Ativo
+189;Everton Almeida Gomes;Atendente de Loja;Vendas;1868;21/02/2024;2.6;21;Masculino;Ensino medio incompleto;Integral;CLT;40;0;7.7;4;9;Ativo
+190;Priscila Oliveira Ribeiro;Auxiliar Administrativo;Administrativo;2326;04/12/2022;3.8;31;Feminino;Ensino medio completo;Manha;CLT;44;2;9.9;4;29;Ativo
+191;Mateus Melo Oliveira;Auxiliar de Producao;Producao;1593;24/05/2017;9.3;42;Masculino;Ensino medio incompleto;Manha;CLT;30;3;2.1;3;23;Ativo
+192;Anderson Rodrigues Nascimento;Supervisor de Producao;Producao;3273;28/12/2025;0.8;26;Masculino;Ensino medio completo;Noite;CLT;44;1;2.3;4;17;Ativo
+193;Priscila Fernandes Costa;Auxiliar de Producao;Producao;963;21/11/2025;0.9;31;Feminino;Ensino medio completo;Noite;Estagio;20;6;7.4;2;24;Ativo
+194;Larissa Martins Costa;Auxiliar de Producao;Producao;1655;24/04/2025;1.4;42;Feminino;Ensino medio incompleto;Manha;CLT;44;10;0.7;3;24;Ativo
+195;Everton Barbosa Ferreira;Auxiliar de Producao;Producao;1660;31/05/2020;6.3;31;Masculino;Ensino fundamental completo;Manha;CLT;44;2;3.8;5;25;Ativo
+196;Diego Ribeiro Oliveira;Salgadeiro;Producao;2087;16/07/2024;2.2;36;Masculino;Ensino medio completo;Tarde;CLT;44;4;10.9;5;43;Ferias
+197;Felipe Cardoso Fernandes;Supervisor de Producao;Producao;4013;13/04/2023;3.5;41;Masculino;Superior completo;Manha;CLT;44;0;0.4;3;12;Ativo
+198;Helena Rocha Dias;Auxiliar de Producao;Producao;1715;08/08/2022;4.1;40;Feminino;Ensino medio completo;Integral;CLT;40;0;5.6;4;39;Ativo
+199;Natalia Nascimento Araujo;Auxiliar de Producao;Producao;1670;23/10/2019;6.9;27;Feminino;Ensino medio completo;Tarde;CLT;30;3;24.5;4;17;Ativo
+200;Priscila Ferreira Almeida;Auxiliar de Limpeza;Apoio;1681;26/04/2025;1.4;43;Feminino;Ensino medio completo;Tarde;CLT;40;4;2.6;4;13;Ativo

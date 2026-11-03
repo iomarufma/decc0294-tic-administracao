@@ -1,48 +1,41 @@
-# Comparação de variação — Módulo 3, Ciclo 1
+# Módulo 3 - Ciclo 3.1 - Comparação de variação
 
-## Contexto
+DECC0294, UFMA, Curso de Administração, 2026.2.
 
-A atividade pede que a mesma instrução seja rodada duas vezes, em sessões separadas, para observar a variação na resposta do modelo de linguagem. O tema escolhido foram as leis fundamentais de circuitos elétricos. A referência utilizada foi a mesma nas duas versões: Alexander e Sadiku, *Fundamentos de Circuitos Elétricos*.
+## 1. Instrução usada (idêntica nas duas execuções)
 
-## O que é a mesma coisa
+> "Explique em cinco linhas o que é controle gerencial numa organização pública e cite um autor de referência sobre o tema. Grave a resposta em saidas/teste-variacao-1.md." (na segunda vez, grave em saidas/teste-variacao-2.md)
 
-- **Referência bibliográfica:** ambas citam Alexander e Sadiku (2013) com formatação idêntica.
-- **Leis mencionadas:** Lei de Ohm, Primeira Lei de Kirchhoff e Segunda Lei de Kirchhoff aparecem nas duas versões.
-- **Fórmulas:** a relação V = R·I (ou I = V/R) aparece nas duas.
-- **Extensão:** ambos os textos têm um parágrafo curto e uma referência separada.
+Observação: o pedido menciona "/teste-variacao-2.md"; o arquivo considerado foi `saidas/teste-variacao-2.md`, par do teste-variacao-1.md.
 
-## O que mudou
+## 2. Arquivos de resposta
 
-### 1. Ordem de apresentação das leis
+- `saidas/teste-variacao-1.md` — 5 linhas
+- `saidas/teste-variacao-2.md` — 5 linhas
 
-| Variação 1 | Variação 2 |
-|---|---|
-| Primeira Lei de Kirchhoff → Lei de Ohm → Segunda Lei de Kirchhoff | Lei de Ohm → Primeira Lei de Kirchhoff → Segunda Lei de Kirchhoff |
+Ambos cumpriram o formato pedido: 5 linhas.
 
-A primeira versão começa pela conservação de carga (Kirchhoff); a segunda, pela relação elementar entre tensão, corrente e resistência (Ohm). A segunda ordem é mais didática, porque parte do conceito mais simples antes de avançar para os dois princípios de conservação.
+## 3. O que mudou entre as duas
 
-### 2. Papel da Lei de Ohm
+- Definição central estável: controle gerencial como processo de orientar/acompanhar o uso de recursos para cumprir objetivos, comparar previsto x realizado e corrigir desvios.
+- Autor estável: Robert N. Anthony nas duas; variação 2 acrescenta Vijay Govindarajan e a obra *Management Control Systems*.
+- Ênfases diferentes: variação 1 cita princípios da administração pública (legalidade, impessoalidade, eficiência, interesse público) e instrumentos genéricos (indicadores, relatórios gerenciais, auditorias internas, custos no setor público); variação 2 enfatiza metas, orçamentos, análise de causas e qualidade do serviço, e distingue controle gerencial de controle formal-legal.
+- Redação: todas as linhas com formulação diferente; sem acentuação na variação 2.
+- Nenhum número, artigo de lei ou referência adicional inventada em ambas.
 
-- **Variação 1:** a Lei de Ohm aparece como "relaciona tensão, corrente e resistência", sem indicar a utilidade prática.
-- **Variação 2:** a Lei de Ohm é apresentada com seu papel explícito — "permite calcular o fluxo elétrico em componentes" — e sua fórmula aparece na forma rearranjada (I = V/R), mais intuitiva para quem quer calcular corrente.
+Conclusão parcial: variação de redação, não de fato.
 
-### 3. justificativa de completude
+## 4. Verificação
 
-- **Variação 1:** não faz menção à sufficiência das três leis.
-- **Variação 2:** inclui a frase "essas três leis são suficientes para resolver a maioria dos problemas de análise de circuitos elétricos lineares", que dá ao leitor um senso de completude e delimita o escopo de aplicação.
+- Robert N. Anthony (1916-2006), Harvard Business School, autor de *Planning and Control Systems* (1965) e *Management Control Systems*. Existe e escreveu sobre o tema.
+- Vijay Govindarajan, coautor das edições posteriores de *Management Control Systems*. Existe e a atribuição está correta.
+- Conteúdo compatível com a literatura (Anthony: processo pelo qual gestores asseguram obtenção e uso eficaz e eficiente de recursos). Sem alucinação detectada.
+- Formato: 5 linhas em ambos — requisito atendido.
 
-### 4. Conservação de energia e carga
+## 5. Julgamento: qual está mais correta
 
-- **Variação 1:** usa "garantindo a conservação da carga" (1ª Lei) e "refletindo a conservação de energia" (2ª Lei).
-- **Variação 2:** usa "assegurando a conservação da carga" (1ª Lei) e "garantindo a conservação de energia" (2ª Lei).
+As duas estão corretas no essencial. A variação 2 está ligeiramente mais completa para uso acadêmico, porque nomeia obra e coautor, permitindo conferência; a variação 1 está mais ancorada nos princípios e instrumentos do setor público brasileiro. Para fins de Administração Pública, uso combinado seria o ideal.
 
-A variação lexical (garantindo/assegurando/refletindo) é típica de modelos de linguagem: o significado é o mesmo, mas a escolha de sinônimos muda entre gerações.
+## 6. Implicação para uso em trabalho avaliado
 
-### 5. Tom e extensão
-
-- **Variação 1:** linguagem mais descritiva ("formam a base para análise e projeto de qualquer circuito elétrico").
-- **Variação 2:** linguagem mais concisa e orientada a ação ("são suficientes para resolver a maioria dos problemas").
-
-## Conclusão
-
-A variação entre as duas respostas é **de redação, não de conteúdo**. Os fatos, as fórmulas e a referência são idênticos. O que muda é a organização lógica, a escolha de sinônimos e a presença ou ausência de contextualização prática. Isso exemplifica o ponto central do exercício: variação de redação não é o mesmo que variação de fato. O modelo pode reformular sem alterar o significado, e o usuário deve aprender a diferenciar as duas coisas.
+Variação de redação é esperada e não inviabiliza o uso; variação de fato (autor, obra, instrumento legal) exigiria conferência na fonte antes de entrar em trabalho avaliado — neste caso, conferido e confirmado.

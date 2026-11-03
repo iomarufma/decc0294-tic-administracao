@@ -1,11 +1,5 @@
-Controle gerencial em organização pública é o processo gerencial de
-monitorar, avaliar e ajustar a execução de planos, programas e metas,
-assegurando eficiência, eficácia e economicidade na utilização de
-recursos públicos. Ele envolve o acompanhamento de indicadores de
-desempenho, a correção de desvios e a prestação de contas à sociedade.
-O controle gerencial complementa o controle externo e o interno ao
-fornecer informações gerenciais para a tomada de decisão no âmbito
-das políticas públicas. Essa abordagem está alinhada aos princípios
-da gestão fiscal e à Lei de Responsabilidade Fiscal (Lei Complementar
-nº 101/2000). Referência: Campos, James S. (1990). *Controle
-Gerencial em Organizações Públicas*.
+O controle gerencial na organização pública é o processo sistemático de acompanhamento da execução de planos, metas e orçamentos.
+Envolve coletar informações, comparar o desempenho realizado com o previsto e corrigir desvios no uso dos recursos públicos.
+Diferente da empresa privada, orienta-se pelos princípios da legalidade, impessoalidade, eficiência e pelo interesse público.
+Inclui instrumentos como indicadores de desempenho, relatórios gerenciais, auditorias internas e sistemas de custos no setor público.
+Para Robert N. Anthony, referência clássica no tema, controle gerencial é o processo pelo qual os gestores asseguram que os recursos sejam obtidos e usados eficaz e eficientemente nos objetivos organizacionais.
