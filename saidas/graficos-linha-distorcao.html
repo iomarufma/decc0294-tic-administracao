@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dois graficos de linha - exemplo de distorcao</title>
+<style>
+body{font-family:"Segoe UI",Calibri,Arial,sans-serif;color:#333;background:#f2f2f2;margin:0;padding:24px}
+h1{color:#8D0333;margin:0 0 8px}
+p{line-height:1.5;margin:0 0 12px}
+.wrap{max-width:1280px;margin:0 auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:#fff;border:1px solid #e0e0e0;padding:16px}
+.card h2{color:#8D0333;font-size:18px;margin:0 0 8px}
+.card svg{width:100%;height:auto}
+.nota{font-size:13px;color:#777;margin-top:8px}
+.defeito{background:#faf7f8;border-left:5px solid #b00020;padding:12px 14px;margin-top:10px;font-size:14px}
+footer{margin-top:20px;font-size:12px;color:#777}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Dois graficos de linha com os mesmos dados</h1>
+<p>Dados: Custo por atendimento - Unidade Centro (R$). Periodo: jan a dez de 2026. Fonte: Base ficticia para fins didaticos (DECC0294). Os dois graficos usam a serie identica; apenas a escala do eixo vertical muda, o que altera a leitura.</p>
+<div class="grid">
+<section class="card">
+<h2>Versao honesta</h2>
+<svg viewBox="0 0 620 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Custo por atendimento - Unidade Centro (R$) - versao honesta">
+<rect x="0" y="0" width="620" height="320" fill="#ffffff"/>
+<text x="58" y="22" font-size="15" font-weight="700" fill="#8D0333">Custo por atendimento - Unidade Centro (R$) - versao honesta</text>
+<line x1="58" y1="274.0" x2="602" y2="274.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="278.0" font-size="11" fill="#666" text-anchor="end">0</text>
+<line x1="58" y1="234.0" x2="602" y2="234.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="238.0" font-size="11" fill="#666" text-anchor="end">20</text>
+<line x1="58" y1="194.0" x2="602" y2="194.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="198.0" font-size="11" fill="#666" text-anchor="end">40</text>
+<line x1="58" y1="154.0" x2="602" y2="154.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="158.0" font-size="11" fill="#666" text-anchor="end">60</text>
+<line x1="58" y1="114.0" x2="602" y2="114.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="118.0" font-size="11" fill="#666" text-anchor="end">80</text>
+<line x1="58" y1="74.0" x2="602" y2="74.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="78.0" font-size="11" fill="#666" text-anchor="end">100</text>
+<line x1="58" y1="34.0" x2="602" y2="34.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="38.0" font-size="11" fill="#666" text-anchor="end">120</text>
+<line x1="58" y1="274" x2="602" y2="274" stroke="#999" stroke-width="1"/>
+<text x="58.0" y="290" font-size="11" fill="#666" text-anchor="middle">jan</text>
+<text x="107.5" y="290" font-size="11" fill="#666" text-anchor="middle">fev</text>
+<text x="156.9" y="290" font-size="11" fill="#666" text-anchor="middle">mar</text>
+<text x="206.4" y="290" font-size="11" fill="#666" text-anchor="middle">abr</text>
+<text x="255.8" y="290" font-size="11" fill="#666" text-anchor="middle">mai</text>
+<text x="305.3" y="290" font-size="11" fill="#666" text-anchor="middle">jun</text>
+<text x="354.7" y="290" font-size="11" fill="#666" text-anchor="middle">jul</text>
+<text x="404.2" y="290" font-size="11" fill="#666" text-anchor="middle">ago</text>
+<text x="453.6" y="290" font-size="11" fill="#666" text-anchor="middle">set</text>
+<text x="503.1" y="290" font-size="11" fill="#666" text-anchor="middle">out</text>
+<text x="552.5" y="290" font-size="11" fill="#666" text-anchor="middle">nov</text>
+<text x="602.0" y="290" font-size="11" fill="#666" text-anchor="middle">dez</text>
+<polyline points="58.0,70.0 107.5,68.0 156.9,72.0 206.4,66.0 255.8,64.0 305.3,62.0 354.7,66.0 404.2,60.0 453.6,58.0 503.1,62.0 552.5,56.0 602.0,54.0" fill="none" stroke="#8D0333" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="58.0" cy="70.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="107.5" cy="68.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="156.9" cy="72.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="206.4" cy="66.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="255.8" cy="64.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="305.3" cy="62.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="354.7" cy="66.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="404.2" cy="60.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="453.6" cy="58.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="503.1" cy="62.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="552.5" cy="56.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<circle cx="602.0" cy="54.0" r="4" fill="#8D0333" stroke="#fff" stroke-width="1.5"/>
+<text x="58" y="314" font-size="11" fill="#666">Eixo vertical comeca em 0.</text>
+</svg>
+<p class="nota">Eixo vertical de 0 a 120. A linha quase plana mostra que o custo por atendimento variou pouco no periodo (cerca de 8 por cento). Conclusao: custo estavel.</p>
+</section>
+<section class="card">
+<h2>Versao distorcida (vies de escala)</h2>
+<svg viewBox="0 0 620 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Custo por atendimento - Unidade Centro (R$) - versao distorcida (eixo truncado)">
+<rect x="0" y="0" width="620" height="320" fill="#ffffff"/>
+<text x="58" y="22" font-size="15" font-weight="700" fill="#8D0333">Custo por atendimento - Unidade Centro (R$) - versao distorcida (eixo truncado)</text>
+<line x1="58" y1="274.0" x2="602" y2="274.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="278.0" font-size="11" fill="#666" text-anchor="end">100</text>
+<line x1="58" y1="234.0" x2="602" y2="234.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="238.0" font-size="11" fill="#666" text-anchor="end">102</text>
+<line x1="58" y1="194.0" x2="602" y2="194.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="198.0" font-size="11" fill="#666" text-anchor="end">104</text>
+<line x1="58" y1="154.0" x2="602" y2="154.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="158.0" font-size="11" fill="#666" text-anchor="end">106</text>
+<line x1="58" y1="114.0" x2="602" y2="114.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="118.0" font-size="11" fill="#666" text-anchor="end">108</text>
+<line x1="58" y1="74.0" x2="602" y2="74.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="78.0" font-size="11" fill="#666" text-anchor="end">110</text>
+<line x1="58" y1="34.0" x2="602" y2="34.0" stroke="#e6e6e6" stroke-width="1"/>
+<text x="52" y="38.0" font-size="11" fill="#666" text-anchor="end">112</text>
+<line x1="58" y1="274" x2="602" y2="274" stroke="#999" stroke-width="1"/>
+<text x="58.0" y="290" font-size="11" fill="#666" text-anchor="middle">jan</text>
+<text x="107.5" y="290" font-size="11" fill="#666" text-anchor="middle">fev</text>
+<text x="156.9" y="290" font-size="11" fill="#666" text-anchor="middle">mar</text>
+<text x="206.4" y="290" font-size="11" fill="#666" text-anchor="middle">abr</text>
+<text x="255.8" y="290" font-size="11" fill="#666" text-anchor="middle">mai</text>
+<text x="305.3" y="290" font-size="11" fill="#666" text-anchor="middle">jun</text>
+<text x="354.7" y="290" font-size="11" fill="#666" text-anchor="middle">jul</text>
+<text x="404.2" y="290" font-size="11" fill="#666" text-anchor="middle">ago</text>
+<text x="453.6" y="290" font-size="11" fill="#666" text-anchor="middle">set</text>
+<text x="503.1" y="290" font-size="11" fill="#666" text-anchor="middle">out</text>
+<text x="552.5" y="290" font-size="11" fill="#666" text-anchor="middle">nov</text>
+<text x="602.0" y="290" font-size="11" fill="#666" text-anchor="middle">dez</text>
+<polyline points="58.0,234.0 107.5,214.0 156.9,254.0 206.4,194.0 255.8,174.0 305.3,154.0 354.7,194.0 404.2,134.0 453.6,114.0 503.1,154.0 552.5,94.0 602.0,74.0" fill="none" stroke="#b00020" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="58.0" cy="234.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="107.5" cy="214.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="156.9" cy="254.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="206.4" cy="194.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="255.8" cy="174.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="305.3" cy="154.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="354.7" cy="194.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="404.2" cy="134.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="453.6" cy="114.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="503.1" cy="154.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="552.5" cy="94.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<circle cx="602.0" cy="74.0" r="4" fill="#b00020" stroke="#fff" stroke-width="1.5"/>
+<text x="58" y="314" font-size="11" fill="#b00020" font-weight="700">AVISO: o eixo vertical comeca em 100, nao em 0. A variacao real e de ~8%; visualmente parece muito maior.</text>
+</svg>
+<div class="defeito"><strong>Defeito:</strong> o eixo vertical comeca em 100 em vez de 0, sem declarar o corte. A mesma variacao de ~8 por cento passa a parecer uma subida acentuada, induzindo a conclusao de que o custo disparou. Em grafico de linha truncar o eixo e aceitavel apenas quando o corte e declarado.</div>
+</section>
+</div>
+<footer>Gerado por gerar_graficos_linha.py - DECC0294, UFMA, Curso de Administracao.</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard 3D — RH Empresa de Salgados (200 funcionários)</title>
+<style>
+  :root { --bg:#0f172a; --card:#1e293b; --txt:#e2e8f0; --mut:#94a3b8; --acc:#f59e0b; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:var(--txt); }
+  header { padding:20px 24px 8px; }
+  header h1 { margin:0; font-size:1.4rem; }
+  header p { color:var(--mut); margin:6px 0 0; font-size:.9rem; }
+  .kpis { display:flex; gap:12px; flex-wrap:wrap; padding:14px 24px; }
+  .kpi { background:var(--card); border-radius:10px; padding:12px 16px; min-width:160px; flex:1; }
+  .kpi b { font-size:1.3rem; display:block; }
+  .kpi span { color:var(--mut); font-size:.8rem; }
+  .controls { display:flex; gap:8px; flex-wrap:wrap; padding:4px 24px 0; align-items:center; }
+  .controls button { background:#334155; color:var(--txt); border:0; border-radius:8px; padding:9px 14px; cursor:pointer; }
+  .controls button.ativo { background:var(--acc); color:#111; font-weight:bold; }
+  .controls label { color:var(--mut); font-size:.85rem; }
+  #wrap { position:relative; margin:12px 24px; background:#0b1220; border-radius:12px; overflow:hidden; }
+  #cena { width:100%; height:520px; display:block; }
+  #tip { position:absolute; display:none; background:#000d; border:1px solid #475569; padding:8px 10px; border-radius:8px; font-size:.85rem; pointer-events:none; max-width:260px; }
+  #detalhe { margin:0 24px; color:var(--mut); font-size:.9rem; min-height:1.6em; }
+  .legenda { display:flex; gap:10px; flex-wrap:wrap; padding:8px 24px 4px; font-size:.8rem; color:var(--mut); }
+  .legenda i { display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:4px; }
+  footer { padding:10px 24px 26px; color:var(--mut); font-size:.8rem; }
+  a { color:var(--acc); }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<header>
+  <h1>🍢 Dashboard 3D — RH da Empresa de Salgados</h1>
+  <p>Base simulada com 200 funcionários (dados fictícios, DECC0294). Arraste para orbitar • scroll para zoom • passe o mouse nas barras. Biblioteca: <b>Three.js</b>.</p>
+</header>
+
+<div class="kpis">
+  <div class="kpi"><b>200</b><span>funcionários na base</span></div>
+  <div class="kpi"><b>R$ 437.156</b><span>folha mensal total</span></div>
+  <div class="kpi"><b>R$ 1.840</b><span>salário mediano (média R$ 2.186)</span></div>
+  <div class="kpi"><b>175 ativos (87,5%)</b><span>11 férias • 7 afastados • 7 desligados</span></div>
+</div>
+
+<div class="controls">
+  <button id="b-cargo" class="ativo">Headcount por cargo</button>
+  <button id="b-sal">Salário médio por cargo</button>
+  <button id="b-setor">Headcount por setor</button>
+  <label><input type="checkbox" id="giro" checked> rotação automática</label>
+</div>
+
+<div id="wrap">
+  <canvas id="cena"></canvas>
+  <div id="tip"></div>
+</div>
+<p id="detalhe">Dica: clique numa barra para fixar o detalhe aqui.</p>
+<div class="legenda" id="legenda"></div>
+
+<footer>
+  Fonte: <code>dados/funcionarios-salgados-200.csv</code> • Análise completa em <code>saidas/analise-descritiva-RH-salgados.docx</code> •
+  Nota: o salário médio de um cargo inclui 1 lançamento atípico de R$ 25.000 (erro proposital para o Módulo 6).
+  Requer internet (CDN do Three.js).
+</footer>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const DADOS = {
+  cargo: {
+    titulo: 'Headcount por cargo (nº de funcionários)',
+    unidade: '',
+    itens: [
+      ['Auxiliar de Producao', 70], ['Salgadeiro', 40], ['Atendente de Loja', 30],
+      ['Entregador', 20], ['Auxiliar de Limpeza', 12], ['Auxiliar Administrativo', 10],
+      ['Supervisor de Producao', 8], ['Gerente', 4], ['Motorista', 3], ['Nutricionista', 3]
+    ]
+  },
+  sal: {
+    titulo: 'Salário médio mensal por cargo (R$)',
+    unidade: 'R$',
+    itens: [
+      ['Gerente', 6736], ['Nutricionista', 4058], ['Supervisor de Producao', 3692],
+      ['Atendente de Loja', 2465], ['Motorista', 2444], ['Salgadeiro', 2159],
+      ['Auxiliar Administrativo', 2138], ['Entregador', 2044],
+      ['Auxiliar de Producao', 1691], ['Auxiliar de Limpeza', 1686]
+    ]
+  },
+  setor: {
+    titulo: 'Headcount por setor (nº de funcionários)',
+    unidade: '',
+    itens: [
+      ['Producao', 118], ['Vendas', 30], ['Logistica', 23],
+      ['Administrativo', 14], ['Apoio', 12], ['Qualidade', 3]
+    ]
+  }
+};
+const CORES = [0xf59e0b,0x38bdf8,0xa78bfa,0x34d399,0xfb7185,0xfbbf24,0x22d3ee,0xe879f9,0x4ade80,0xf97316];
+
+const canvas = document.getElementById('cena');
+const tip = document.getElementById('tip');
+const detalhe = document.getElementById('detalhe');
+const legenda = document.getElementById('legenda');
+
+const renderer = new THREE.WebGLRenderer({ canvas, antialias:true });
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0b1220);
+const camera = new THREE.PerspectiveCamera(50, 2, 0.1, 200);
+camera.position.set(9, 8, 12);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+controls.autoRotate = true;
+controls.autoRotateSpeed = 0.9;
+controls.target.set(0, 2, 0);
+
+scene.add(new THREE.AmbientLight(0xffffff, 0.75));
+const sol = new THREE.DirectionalLight(0xffffff, 1.4);
+sol.position.set(6, 12, 8);
+scene.add(sol);
+scene.add(new THREE.GridHelper(30, 30, 0x334155, 0x1e293b));
+
+let grupo = null, barras = [];
+const ray = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+
+function fmt(v, un) {
+  if (un === 'R$') return 'R$ ' + Math.round(v).toLocaleString('pt-BR');
+  return v.toLocaleString('pt-BR');
+}
+function desenhar(chave) {
+  if (grupo) { scene.remove(grupo); }
+  grupo = new THREE.Group();
+  barras = [];
+  const { itens, unidade, titulo } = DADOS[chave];
+  const max = Math.max(...itens.map(i => i[1]));
+  const n = itens.length;
+  const larg = n > 8 ? 0.9 : 1.2, esp = n > 8 ? 1.15 : 1.7;
+  const x0 = -((n - 1) * esp) / 2;
+  itens.forEach(([nome, valor], i) => {
+    const h = Math.max(0.35, (valor / max) * 7);
+    const geo = new THREE.BoxGeometry(larg, h, larg);
+    const mat = new THREE.MeshStandardMaterial({ color: CORES[i % CORES.length], roughness: 0.45, metalness: 0.15 });
+    const m = new THREE.Mesh(geo, mat);
+    m.position.set(x0 + i * esp, h / 2, 0);
+    m.userData = { nome, valor, unidade, titulo };
+    grupo.add(m);
+    barras.push(m);
+    // base com o nome (placa)
+    const cv = document.createElement('canvas'); cv.width = 256; cv.height = 64;
+    const cx = cv.getContext('2d');
+    cx.fillStyle = '#0b1220'; cx.fillRect(0, 0, 256, 64);
+    cx.fillStyle = '#e2e8f0'; cx.font = 'bold 22px Arial'; cx.textAlign = 'center';
+    const curto = nome.length > 20 ? nome.slice(0, 19) + '…' : nome;
+    cx.fillText(curto, 128, 40);
+    const tex = new THREE.CanvasTexture(cv);
+    const placa = new THREE.Mesh(
+      new THREE.PlaneGeometry(1.5, 0.38),
+      new THREE.MeshBasicMaterial({ map: tex, transparent: true })
+    );
+    placa.position.set(x0 + i * esp, 0.02, larg / 2 + 0.55);
+    placa.rotation.x = -Math.PI / 2.4;
+    grupo.add(placa);
+  });
+  scene.add(grupo);
+  detalhe.textContent = titulo + ' — passe o mouse ou clique nas barras.';
+  legenda.innerHTML = itens.map(([nome], i) =>
+    `<span><i style="background:#${CORES[i % CORES.length].toString(16).padStart(6, '0')}"></i>${nome}</span>`
+  ).join('');
+  document.querySelectorAll('.controls button').forEach(b => b.classList.remove('ativo'));
+  document.getElementById(chave === 'cargo' ? 'b-cargo' : chave === 'sal' ? 'b-sal' : 'b-setor').classList.add('ativo');
+}
+
+function pos(e) {
+  const r = canvas.getBoundingClientRect();
+  mouse.x = ((e.clientX - r.left) / r.width) * 2 - 1;
+  mouse.y = -((e.clientY - r.top) / r.height) * 2 + 1;
+  ray.setFromCamera(mouse, camera);
+  const hit = ray.intersectObjects(barras)[0];
+  return { hit, x: e.clientX - r.left, y: e.clientY - r.top };
+}
+canvas.addEventListener('pointermove', e => {
+  const { hit, x, y } = pos(e);
+  barras.forEach(b => b.material.emissive.setHex(0x000000));
+  if (hit) {
+    const b = hit.object;
+    b.material.emissive.setHex(0x333333);
+    const { nome, valor, unidade } = b.userData;
+    tip.style.display = 'block';
+    tip.style.left = (x + 14) + 'px';
+    tip.style.top = (y + 10) + 'px';
+    tip.innerHTML = `<b>${nome}</b><br>${fmt(valor, unidade)}`;
+    canvas.style.cursor = 'pointer';
+  } else { tip.style.display = 'none'; canvas.style.cursor = 'grab'; }
+});
+canvas.addEventListener('click', e => {
+  const { hit } = pos(e);
+  if (hit) {
+    const { nome, valor, unidade, titulo } = hit.object.userData;
+    detalhe.textContent = `${titulo} ▸ ${nome}: ${fmt(valor, unidade)}.`;
+  }
+});
+document.getElementById('b-cargo').onclick = () => desenhar('cargo');
+document.getElementById('b-sal').onclick = () => desenhar('sal');
+document.getElementById('b-setor').onclick = () => desenhar('setor');
+document.getElementById('giro').onchange = e => { controls.autoRotate = e.target.checked; };
+
+function ajuste() {
+  const w = canvas.clientWidth || canvas.parentElement.clientWidth;
+  const h = 520;
+  renderer.setSize(w, h, false);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+}
+window.addEventListener('resize', ajuste);
+
+desenhar('cargo');
+ajuste();
+(function loop() { requestAnimationFrame(loop); controls.update(); renderer.render(scene, camera); })();
+</script>
+</body>
+</html>
